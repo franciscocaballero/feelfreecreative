@@ -1,0 +1,95 @@
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  color: $color-white;
+}
+
+
+//-----Headings ---------------------//
+.heading-primary {
+  z-index: 1000;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  // text-shadow: 2px 2px 4px #fff;
+  &--main {
+    display: block;
+    font-size: 8rem;
+    padding: 0;
+    margin: 0;
+  }
+  &--sub {
+    display: block;
+    font-size: 13rem;
+    padding: 0;
+
+    margin-left: -2px;
+    line-height: 60%;
+  }
+}
+.heading-secondary {
+  
+  color: $color-white;
+  &--main {
+    display: block;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+  }
+  &--sub {
+    display: block;
+    font-size: 4rem;
+    padding: 0;
+
+    // margin-left: -2px;
+    line-height: 60%;
+  }
+}
+.heading-third{
+  font-size: 2rem;
+  color: $color-white;
+}
+.heading-forth {
+  border-bottom: 0.3rem solid $color-primary;
+}
+.heading-fourth--main {
+  border-bottom: 0.3rem solid $color-white;
+}
+.heading-paragraph {
+  font-size: 1.5rem;
+  color: $color-systemGray-2;
+  font-weight: 100;
+}
+
+
+//********** Spans ***************************************//
+.about-span {
+  color: $color-primary;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.heading-line {
+  border: 1px solid $color-primary;
+  height: 0.1rem;
+  width: 6rem;
+
+}
+
+.linebox {
+
+}
+.line {
+  border-left: 20px solid $color-primary;
+  height: 215px;
+  position: absolute;
+  left: 27.7%;
+  margin-left: -3px;
+  top: 21%;
+  z-index: 1;
+}
+
+.feature-box__text {
+  color: $color-systemGray-2;
+  &--main {
+    color: $color-white;
+  }
+}

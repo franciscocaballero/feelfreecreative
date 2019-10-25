@@ -1,0 +1,28 @@
+.feature-box {
+  background-color: $color-systemGray-3;
+  font-size: 1.5rem;
+  padding: 3.5rem;
+  text-align: left;
+  border-radius: none;
+  &__icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    color: $color-primary;
+
+  }
+  &--main {
+    color: $color-white;
+    background-color: $color-primary;
+    font-size: 1.5rem;
+    padding: 3.5rem;
+    text-align: left;
+    border-radius: none;
+    &__icon-main{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        color: $color-white;
+    }
+}
+}
