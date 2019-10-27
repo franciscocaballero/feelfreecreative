@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="#">
@@ -158,7 +159,8 @@
         </div>
         <div class="row">
             <div class="hr-box">
-                <hr class="hr-line">
+                <!-- <hr class="hr-line"> -->
+                <div class="scroller scroller--pink"></div>
             </div>
         </div>
     </section>
@@ -166,18 +168,18 @@
     <section class="section-services">
         <div class="row">
             <span class="about-span">WHAT WE DO</span>
-            <h2 class="heading-secondary u-margin-bottom-small">
-                <span class="heading-secondary--main">
-                    Our Services
-                </span>
-            </h2>
+            <h2 class="heading-secondary u-margin-bottom-small">Our Services</h2>
+            <hr class="heading-line u-margin-bottom-medium">
         </div>
         <div class="row">
 
             <div class="col-1-of-3">
+
                 <div class="services-box">
-                    <div class="col-1-of-2">
-                        <div class="circle"></div>
+                    <div class="col-1-of-2 center">
+                        <div class="image-cropper">
+                            <img src="img/code.jpg" alt="avatar" class="profile-pic-2">
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h3 class="heading-third">
@@ -196,14 +198,18 @@
             <div class="col-1-of-3">
                 <div class="services-box">
                     <div class="col-1-of-2">
-                        <div class="circle"></div>
+                        <!-- <div class="circle"></div> -->
+                        <div class="image-cropper">
+                            <img src="img/shop.jpg" alt="avatar" class="profile-pic">
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h3 class="heading-third">
                             E-COMMERCE DESIGN
                         </h3>
                         <p>
-                            By customzing e-commerce websites, we maximize coversion rates, turning visitors into buyers.
+                            By customzing e-commerce websites, we maximize coversion rates, turning visitors into
+                            buyers.
                         </p>
                         <a href="#" class="btn-more">
                             Pricing&#8594;
@@ -213,9 +219,12 @@
             </div>
 
             <div class="col-1-of-3">
+
                 <div class="services-box">
                     <div class="col-1-of-2">
-                        <div class="circle"></div>
+                        <div class="image-cropper">
+                            <img src="img/working.jpg" alt="avatar" class="profile-pic">
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h3 class="heading-third">
@@ -238,7 +247,9 @@
             <div class="col-1-of-3">
                 <div class="services-box">
                     <div class="col-1-of-2">
-                        <div class="circle"></div>
+                        <div class="image-cropper">
+                            <img src="img/host.jpg" alt="avatar" class="profile-pic-2">
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h3 class="heading-third">
@@ -257,7 +268,9 @@
             <div class="col-1-of-3">
                 <div class="services-box">
                     <div class="col-1-of-2">
-                        <div class="circle"></div>
+                        <div class="image-cropper">
+                            <img src="img/photo.jpg" alt="avatar" class="profile-pic-2">
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h3 class="heading-third">
@@ -276,7 +289,9 @@
             <div class="col-1-of-3">
                 <div class="services-box">
                     <div class="col-1-of-2">
-                        <div class="circle"></div>
+                        <div class="image-cropper">
+                            <img src="img/market.jpg" alt="avatar" class="profile-pic">
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <h3 class="heading-third">
@@ -293,13 +308,85 @@
             </div>
 
         </div>
-
-
-
-
     </section>
 
+<section class="section-pricing">
+        <div class="row">
+                <span class="about-span">PICK A PLAN</span>
+                <h2 class="heading-secondary u-margin-bottom-small">Our Pricing</h2>
+                <hr class="heading-line u-margin-bottom-medium">
+            </div>
+    <div class="row">
+        <div class="col-1-of-3">
+            <div class="pricing-card">
+                <h3 class="card-heading">
+                    BRONZE
+                </h3>
+                <h3 class="card-heading">
+                    $300
+                </h3>
+                <div class="card-details">
+                    <ul>
+                    <li>WordPress Template</li> 
+                    <li>Up to 3 pages</li> 
+                    <li>1 Hour In-person Brainstorm</li> 
+                    <li>Mobile Responsive</li> 
+                    <li>Social Media Intergration</li> 
+                    <li>Google Maps</li> 
+                    <li>Mailing List Plugin</li> 
+                    <li>Contact Form</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-1-of-3">
+                <div class="pricing-card pricing-card--main">
+                    <h3 class="card-heading">
+                        SILVER
+                    </h3>
+                    <h3 class="card-heading">
+                        $600
+                    </h3>
+                    <div class="card-details">
+                        <ul>
+                        <li>Customized WP Theme</li> 
+                        <li>Up to 5 pages</li> 
+                        <li>1 Hour In-person Brainstorm</li> 
+                        <li>Mobile Responsive</li> 
+                        <li>Social Media Intergration</li> 
+                        <li>Google Maps</li> 
+                        <li>Mailing List Plugin</li> 
+                        <li>Contact Form</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                    <div class="pricing-card">
+                        <h3 class="card-heading">
+                            GOLD
+                        </h3>
+                        <h3 class="card-heading">
+                            $1000
+                        </h3>
+                        <div class="card-details">
+                            <ul>
+                            <li>Website from Scratch</li> 
+                            <li>Unlimited amount of pages</li>
+                            <li>2 Page Custom Mock-up</li> 
+                            <li>Mobile Responsive</li> 
+                            <li>Social Media Intergration</li> 
+                            <li>Google Maps</li> 
+                            <li>Mailing List Plugin</li> 
+                            <li>Contact Form</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</section>
 </body>
 
 </html>

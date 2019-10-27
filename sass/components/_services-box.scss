@@ -1,0 +1,20 @@
+.services-box {
+  .image-cropper {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .profile-pic {
+
+    height: auto;
+    width: 100%;
+  }
+  .profile-pic-2 {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%; //centers the image
+    width: auto;
+    height: 100%;
+  }
+}
