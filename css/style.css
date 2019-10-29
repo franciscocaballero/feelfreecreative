@@ -271,9 +271,18 @@ body {
 .slideshow-container {
   position: relative;
   background-color: #000; }
+  .slideshow-container .wrapper {
+    width: 300px;
+    overflow: hidden; }
   .slideshow-container .mySlides {
+    left: -300px;
+    position: absolute;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
     display: none;
-    padding: 6rem; }
+    padding: 4rem 0; }
     .slideshow-container .mySlides i {
       font-size: 6rem;
       display: block; }
@@ -284,6 +293,14 @@ body {
     .slideshow-container .mySlides .author {
       font-size: 1rem;
       color: #fff; }
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0; } }
+
+@keyframes slide {
+  100% {
+    left: 0; } }
 
 .dot-container {
   position: relative;
