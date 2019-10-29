@@ -79,6 +79,12 @@ body {
   height: 0.1rem;
   width: 6rem; }
 
+.heading-line-2 {
+  border: 1px solid #ff375f;
+  height: 0.1rem;
+  width: 12rem;
+  margin: auto; }
+
 .line {
   border-left: 20px solid #ff375f;
   height: 215px;
@@ -92,6 +98,9 @@ body {
   color: #8e8e93; }
   .feature-box__text--main {
     color: #fff; }
+
+.icon-box {
+  font-size: 5rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -240,11 +249,11 @@ body {
   border-radius: 5px;
   background-color: #111111;
   padding: 5.5rem;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .pricing-card:hover {
     transform: scale(1.1); }
   .pricing-card .card-heading {
-    color: #8a8a8a;
+    color: #fff;
     font-size: 5rem;
     font-weight: 100;
     text-align: center; }
@@ -257,7 +266,57 @@ body {
     list-style: none; }
     .pricing-card .card-details ul li {
       border-bottom: 0.5px solid #8a8a8a;
-      padding: .8rem; }
+      padding: 0.8rem; }
+
+.slideshow-container {
+  position: relative;
+  background-color: #000; }
+  .slideshow-container .mySlides {
+    display: none;
+    padding: 6rem; }
+    .slideshow-container .mySlides i {
+      font-size: 6rem;
+      display: block; }
+    .slideshow-container .mySlides q {
+      font-style: italic;
+      font-size: 2rem;
+      color: #c7c7cc; }
+    .slideshow-container .mySlides .author {
+      font-size: 1rem;
+      color: #fff; }
+
+.dot-container {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  display: flex;
+  justify-content: space-between; }
+  .dot-container .prev,
+  .dot-container .next {
+    cursor: pointer;
+    width: auto;
+    margin-top: -3rem;
+    padding: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    user-select: none; }
+    .dot-container .prev:hover,
+    .dot-container .next:hover {
+      color: #ff375f; }
+  .dot-container .dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.2rem;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+    .dot-container .dot:hover, .dot-container .dot:active {
+      background-color: #ff375f; }
 
 .row {
   max-width: 114rem;
@@ -318,9 +377,15 @@ body {
 
 .section-pricing {
   padding: 5rem 0 15rem 0;
+  background-color: #000; }
+
+.section-testimonial {
+  padding: 5rem 0 10rem 0;
   background-color: #000;
-  background-size: cover;
   position: relative; }
+  .section-testimonial img {
+    height: 500px;
+    width: 500px; }
 
 .hr-box {
   display: flex;

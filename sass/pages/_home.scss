@@ -48,9 +48,31 @@
 .section-pricing {
   padding: 5rem 0 15rem 0;
   background-color: $color-black;
-  background-size: cover;
+  // Colors
+// $bg-color: black;
+// $dot-color: pink;
+
+// // Dimensions
+// $dot-size: 2px;
+// $dot-space: 22px;
+
+// 	background:
+// 		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+// 		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+// 		$dot-color;
+// 	background-size: $dot-space $dot-space;
+
+}
+
+.section-testimonial {
+  padding: 5rem 0 10rem 0;
+  background-color: $color-black;
   position: relative;
 
+  img {
+    height: 500px;
+    width: 500px;
+  }
 }
 //*****************Home Icons************************///
 
@@ -68,6 +90,7 @@
   border: 0;
   border-left: 1px solid $color-primary;
 }
+
 
 .circle {
   border: 2rem solid $color-primary;

@@ -3,7 +3,6 @@ body {
   color: $color-white;
 }
 
-
 //-----Headings ---------------------//
 .heading-primary {
   z-index: 1000;
@@ -30,21 +29,16 @@ body {
   font-size: 4rem;
   display: block;
   padding: 0;
-  
+
   color: $color-white;
   &--main {
-
     margin: 0;
   }
   &--sub {
-
-
-
-    // margin-left: -2px;
     line-height: 60%;
   }
 }
-.heading-third{
+.heading-third {
   font-size: 2rem;
   color: $color-white;
 }
@@ -60,7 +54,6 @@ body {
   font-weight: 100;
 }
 
-
 //********** Spans ***************************************//
 .about-span {
   color: $color-primary;
@@ -71,11 +64,15 @@ body {
   border: 1px solid $color-primary;
   height: 0.1rem;
   width: 6rem;
-
+}
+.heading-line-2 {
+  border: 1px solid $color-primary;
+  height: 0.1rem;
+  width: 12rem;
+  margin: auto;
 }
 
 .linebox {
-
 }
 .line {
   border-left: 20px solid $color-primary;
@@ -92,4 +89,10 @@ body {
   &--main {
     color: $color-white;
   }
+}
+
+//---------ICONS--------------------------------//
+
+.icon-box {
+  font-size: 5rem;
 }
