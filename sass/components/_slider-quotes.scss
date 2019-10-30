@@ -1,47 +1,39 @@
 .slideshow-container {
-
-  position: relative;
   background-color: $color-black;
-  .wrapper {
-    width: 300px;
-    overflow: hidden;
-  }
+
   .mySlides {
-    left: -300px;
-    position: absolute;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
     display: none;
-    padding: 4rem 0;
-    // text-align: left;
+    padding: 2rem 0;
+
     i {
-        font-size: 6rem;
-        display: block;
+      font-size: 6rem;
+      display: block;
+      margin-bottom: 1.5rem;
     }
     q {
       font-style: italic;
       font-size: 2rem;
-      color: $color-systemGray-1;
+      color: $color-systemGray-2;
+      
     }
     .author {
-      font-size: 1rem;
+      font-size: 2rem;
+      font-weight: 300;
       color: $color-white;
+      margin-bottom: 1rem;
+      
+      &--pink {
+        color: $color-primary;
+          
+      }
     }
   }
 }
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
 
-@keyframes slide {
-    100% { left: 0; }
-}
 .dot-container {
   position: relative;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   background: $color-black;
   display: flex;
   justify-content: space-between;
@@ -62,10 +54,10 @@
     // top: 50%;
     width: auto;
     margin-top: -3rem;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
     color: $color-white;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
     border-radius: 0 0.3rem 0.3rem 0;
     user-select: none;
 
@@ -87,5 +79,20 @@
     &:active {
       background-color: $color-primary;
     }
+  }
+}
+
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 1s;
+}
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
   }
 }
