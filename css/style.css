@@ -330,21 +330,11 @@ body {
     background-color: pink;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease; }
-    .dot-container .dot:hover, .dot-container .dot:active {
-      background-color: #ff375f; }
+    transition: background-color 0.6s ease;
+    background-color: #717171; }
 
-.w3-animate-left {
-  position: relative;
-  animation: animateleft 1s; }
-
-@keyframes animateleft {
-  from {
-    left: -100px;
-    opacity: 0; }
-  to {
-    left: 0;
-    opacity: 1; } }
+.active, .dot:hover {
+  background-color: #ff375f; }
 
 .row {
   max-width: 114rem;
