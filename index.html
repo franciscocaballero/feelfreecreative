@@ -463,21 +463,23 @@
             </div>
         </div>
     </section>
-<section class="contact-section">
+<section class="section-contact">
     <div class="row">
-        <div class="row">
+        <div class="row u-center-text">
             <span class="about-span">LET'S TALK</span>
             <h2 class="heading-secondary u-margin-bottom-small">Get in Touch</h2>
         </div>
         <div class="col-1-of-2">
-            
+            <div class="earth">
+            <div></div>
+            </div>
         </div>
         <div class="col-1-of-2">
-            <form action="" id="contact-form">
-                <input type="text" class="" name="name" id="name" placeholder="Name">
-                <input type="text" class="" name="email" id="email" placeholder="Email">
-                <input type="text" class="" name="phone" id="phone" placeholder="Phone">
-                <input type="text" class="" name="subject" id="subject" placeholder="Subject">
+            <form action="contact-form-handler.php" class="form">
+                <input type="text" class="" name="name" id="name" placeholder="Name" required>
+                <input type="text" class="" name="email" id="email" placeholder="Email" required>
+                <input type="text" class="" name="phone" id="phone" placeholder="Phone" >
+                <input type="text" class="" name="subject" id="subject" placeholder="Subject" required>
                 <textarea name="message" class="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn--pink">Submit Message</button>
             </form>
