@@ -463,29 +463,67 @@
             </div>
         </div>
     </section>
-<section class="section-contact">
-    <div class="row">
-        <div class="row u-center-text">
-            <span class="about-span">LET'S TALK</span>
-            <h2 class="heading-secondary u-margin-bottom-small">Get in Touch</h2>
-        </div>
-        <div class="col-1-of-2">
-            <div class="earth">
-            <div></div>
+    <section class="section-contact">
+        <div class="row">
+            <div class="row u-center-text">
+                <span class="about-span">LET'S TALK</span>
+                <h2 class="heading-secondary u-margin-bottom-small">Get in Touch</h2>
+            </div>
+            <div class="col-1-of-2">
+                <div class="earth">
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <form action="contact-form-handler.php" class="form">
+                    <input type="text" class="" name="name" id="name" placeholder="Name" required>
+                    <input type="text" class="" name="email" id="email" placeholder="Email" required>
+                    <input type="text" class="" name="phone" id="phone" placeholder="Phone">
+                    <input type="text" class="" name="subject" id="subject" placeholder="Subject" required>
+                    <textarea name="message" class="" id="message" cols="30" rows="10"
+                        placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn--pink">Submit Message</button>
+                </form>
             </div>
         </div>
-        <div class="col-1-of-2">
-            <form action="contact-form-handler.php" class="form">
-                <input type="text" class="" name="name" id="name" placeholder="Name" required>
-                <input type="text" class="" name="email" id="email" placeholder="Email" required>
-                <input type="text" class="" name="phone" id="phone" placeholder="Phone" >
-                <input type="text" class="" name="subject" id="subject" placeholder="Subject" required>
-                <textarea name="message" class="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn--pink">Submit Message</button>
-            </form>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="navigation__logo-box">
+                    <img src="../img/Logouno.png" alt="White-Logo" class="navigation__logo">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique accusantium harum nesciunt magnam.</p>
+            </div>
+      
+        <div class="col-1-of-4">
+            <h3 class="heading-footer">Company</h3>
+            <hr class="heading-line u-margin-bottom-medium">
+            <span>About Us</span>
+            <span>Contact Us</span>
         </div>
+        <div class="col-1-of-4">
+                <h3 class="heading-footer">Contact</h3>
+                <hr class="heading-line u-margin-bottom-medium">
+            <span>Info@feelfreecreative.com</span>
+            <span>703 909 0846</span>
+        </div>
+        <div class="col-1-of-4">
+                <h3 class="heading-footer">Follow us</h3>
+                <hr class="heading-line u-margin-bottom-medium">
+            <ul class="social-media">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></i></li>
+                <li>
+                    <i class="fab fa-instagram">
+                        <a href="url">https://www.instagram.com/feelfreecreative/</a>
+                    </i>
+                </li>
+            </ul>
+        </div>s
     </div>
-</section>
+    </footer>
     <script src="app.js"></script>
 </body>
 
