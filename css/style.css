@@ -29,7 +29,8 @@
 
 html {
   font-size: 62.5%;
-  /* // to get 16px do 10/16 = 62.5% */ }
+  /* // to get 16px do 10/16 = 62.5% */
+  scroll-behavior: smooth; }
 
 /* Project wide font definitions  */
 body {
@@ -143,6 +144,11 @@ body {
   justify-content: center;
   align-items: center; }
 
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   font-size: 1.6rem;
@@ -201,7 +207,14 @@ body {
   animation-iteration-count: infinite; }
   .scroller--pink {
     background-color: #ff375f;
-    height: 10px; }
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+    left: 0;
+    right: 0; }
 
 .composition {
   position: relative;
@@ -288,9 +301,48 @@ body {
       color: #fff; }
 
 footer {
-  padding: 5rem 0 10rem 0;
+  padding: 5rem 0 0 0;
   background-color: #111111;
   position: relative; }
+  footer .footer-content p,
+  footer .footer-content i {
+    color: #989898;
+    font-size: 2rem; }
+  footer .footer-content ul li {
+    display: inline-block;
+    font-size: 1rem;
+    list-style: none;
+    border: 1px solid #ff375f;
+    border-radius: 100%;
+    padding: 1rem;
+    margin: 0.2rem;
+    text-align: center;
+    transition: .04s; }
+    footer .footer-content ul li:hover {
+      background-color: #ff375f; }
+      footer .footer-content ul li:hover i {
+        color: #fff; }
+  footer .go-to-top {
+    margin: 0 auto;
+    text-align: center;
+    width: 38px;
+    line-height: 38px;
+    height: 38px;
+    background: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer; }
+    footer .go-to-top .arrow-icon {
+      font-size: 3.5rem;
+      text-align: center; }
+  footer .terms-box {
+    border-top: 1px solid #100d0d;
+    padding: 1rem 0; }
+    footer .terms-box p {
+      color: #989898;
+      font-size: 2rem; }
 
 .services-box .image-cropper {
   width: 15rem;
@@ -458,7 +510,7 @@ footer {
     width: 500px; }
 
 .section-contact {
-  padding: 5rem 0 10rem 0;
+  padding: 5rem 0 5rem 0;
   background-color: #000;
   position: relative; }
 
