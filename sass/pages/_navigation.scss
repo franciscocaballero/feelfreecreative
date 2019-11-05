@@ -1,18 +1,18 @@
 .navigation {
   background-color: $color-black;
   padding: 2rem 2.5rem;
-  &__nav {
-    display: flex;
-    justify-content: space-around;
-    color: $color-black;
-    list-style: none;
-  }
 
-  &__logo-box {
-    // position: absolute;
-    // top: 4rem;
-    // left: 4rem;
-  }
+  // &__nav {
+  z-index: 1;
+  // position: fixed;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  color: $color-black;
+  list-style: none;
+  // }
+
   &__logo {
     height: 4.5rem;
   }
@@ -43,4 +43,12 @@
       transition: all 0.4s;
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }

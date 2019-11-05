@@ -55,3 +55,28 @@ function showSlides(n) {
 
 //     setTimeout(carousel, 5000);
 // }
+
+
+/// - NAV BAR Functionlity 
+function scanDocument() {
+    let sectionList = document.querySelectorAll(".hidden");
+    sectionList.forEach(function (section) {
+        if (isVisible(section)) {
+            section.classList.remove('hidden');
+        };
+    });
+}
+
+document.addEventListener("scroll", _.throttle(scanDocument, 500));
+
+var scrollPositionY = window.scrollY;
+
+window.addEventListener('scroll', function () {
+    var navBar = document.querySelector(".navigation");
+    scrollPositionY = window.scrollY;
+    if (scrollPositionY >= 700) {
+        navBar.classList.add('sticky');
+    } else {
+        navBar.classList.remove('sticky');
+    }
+});
