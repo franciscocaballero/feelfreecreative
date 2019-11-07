@@ -1,28 +1,36 @@
 .feature-box {
+  animation: fadein 3s;
   background-color: $color-systemGray-3;
   font-size: 1.5rem;
-  padding: 3.5rem;
+  padding: 8.5rem 5.5rem;
   text-align: left;
   border-radius: none;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
   &__icon {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
     display: inline-block;
     color: $color-primary;
-
+    &:hover {
+      color: $color-white;
+    }
   }
   &--main {
     color: $color-white;
     background-color: $color-primary;
     font-size: 1.5rem;
-    padding: 3.5rem;
     text-align: left;
     border-radius: none;
-    &__icon-main{
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        display: inline-block;
-        color: $color-white;
+    &__icon-main {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+      color: $color-white;
     }
-}
+  }
 }

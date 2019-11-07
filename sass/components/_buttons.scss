@@ -1,14 +1,22 @@
 .btn {
-  &,
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
+  text-transform: capitalize;
+  display: inline-block;
+  cursor: pointer;
+
   &:link,
   &:visited {
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 1.5rem 4rem;
-    text-transform: capitalize;
-    display: inline-block;
     transition: all 0.2s;
-    cursor: pointer;
+  }
+  &:hover {
+      transform: translateY(-.2rem);
+      box-shadow: 0 1rem 2rem rgba($color-primary,.15);
+  }
+  &:active {
+      transform: translateY(0);
+      box-shadow: 0 .5rem 1rem rgba($color-primary,.15);
   }
 
   &--pink {
@@ -19,9 +27,14 @@
 
   &--transparent {
     color: $color-systemGray-2;
-    background-color: transparent;
     border: 1px solid $color-primary;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+
+    }
   }
+
 }
 
 .btn-more{
@@ -46,9 +59,24 @@
     }
 
 }
+
+// .scroll-box {
+// padding: 1.5rem;
+// }
 .scroll-downs {
+  // margin-top: -40rem;
+  animation: fadein 3s;
   width: 34px;
   height: 55px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  cursor: pointer;
+  // text-align: center;
+    // position: absolute;
+    // bottom: 1px;
+    // z-index: 1;
+//     left: 0;
+//     right: 0;
 }
 .mousey {
   width: 3px;

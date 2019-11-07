@@ -13,6 +13,10 @@
   list-style: none;
   // }
 
+  .active_nav {
+    color: $color-primary;
+    border-bottom: 0.3rem solid $color-primary;
+  }
   &__logo {
     height: 4.5rem;
   }
