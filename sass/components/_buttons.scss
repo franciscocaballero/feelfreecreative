@@ -23,11 +23,21 @@
     color: $color-white;
     background-color: $color-primary;
     border-radius: 0px;
+    animation: fadeIn 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   &--transparent {
     color: $color-systemGray-2;
     border: 1px solid $color-primary;
+    animation: fadeIn 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     &:hover {
       background-color: $color-primary;
       color: $color-white;

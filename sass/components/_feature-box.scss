@@ -1,24 +1,22 @@
 .feature-box {
-  animation: fadein 3s;
+  animation: fadein 4s;
   background-color: $color-systemGray-3;
   font-size: 1.5rem;
   padding: 8.5rem 5.5rem;
   text-align: left;
   border-radius: none;
   transition: all 0.2s;
+  color: $color-primary;
+  animation: fadeIn 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 
-  &:hover {
-    color: $color-white;
-    background-color: $color-primary;
-  }
   &__icon {
     font-size: 4rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    color: $color-primary;
-    &:hover {
-      color: $color-white;
-    }
   }
   &--main {
     color: $color-white;
@@ -32,5 +30,11 @@
       display: inline-block;
       color: $color-white;
     }
+  }
+  &:hover {
+    background-color: $color-primary;
+  }
+  &:hover > * {
+    color: $color-white;
   }
 }

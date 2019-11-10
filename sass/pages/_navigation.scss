@@ -1,29 +1,36 @@
 .navigation {
   background-color: $color-black;
   padding: 2rem 2.5rem;
-
-  // &__nav {
   z-index: 1;
-  // position: fixed;
   width: 100%;
-
   display: flex;
   justify-content: space-around;
   color: $color-black;
   list-style: none;
-  // }
-
+  i {
+    padding-bottom: 2rem;
+  }
   .active_nav {
     color: $color-primary;
     border-bottom: 0.3rem solid $color-primary;
   }
   &__logo {
     height: 4.5rem;
+    animation: slideDown 2s cubic-bezier(0, 0.3, 0.5, 1.1);
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
   &__list {
     list-style: none;
     color: $color-black;
     display: flex;
+    animation: slideDown 2s cubic-bezier(0, 0.3, 0.5, 1.1);
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
   &__item {
   }
@@ -35,7 +42,7 @@
       color: $color-white;
       font-size: 2rem;
       text-decoration: none;
-
+      color: $color-white;
       margin: 2rem;
       transition: all 0.4s;
     }

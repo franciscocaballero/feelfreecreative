@@ -1,50 +1,59 @@
 .header {
-  height: 100vh;
+  height: 95vh;
   background-color: $color-black;
   padding: 15rem 0 0 0;
   background-size: cover;
   position: relative;
- 
-  // padding-top: -25rem;
-  // display: flex;
-  // justify-content: space-evenly;
   &__text-box {
-    // width: 100%;
-    animation: fadein 3s;
+    
   }
 
-  &__hero-box {
-    animation: fadein 3s;
+  &__hero-box{
+    animation: fadeIn 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   &__hero-box--img {
     height: 70rem;
     margin-top: -15rem;
-    animation: fadein 3s;
   }
 }
-.section-feature {
-  margin-top: -50rem;
-  animation: fadein 3s;
+.header-about {
+  height: 40vh;
+  background-image: url(../img/header-about.jpg);
+  // filter: brightness(50%);
+  // -webkit-filter: grayscale(100%);
+  // // filter: gray;
+  background-size: cover;
+  position: relative;
+}
+.header-services {
+  height: 40vh;
+  background-image: url(../img/header-services.jpg);
+  // filter: brightness(50%);
+  // -webkit-filter: grayscale(100%);
+  // // filter: gray;
+  background-size: cover;
+  position: relative;
 }
 
-// .scroll-box {
-//   // display: flex;
-//   // align-items: center;
-//   // justify-content: center;
-//   // padding: 5rem 0;
-// }
+
+.section-feature {
+  margin-top: -50rem;
+}
 
 .section-about {
   padding: 5rem 0 5rem 0;
   background-color: $color-black;
   background-size: cover;
   position: relative;
-  
 }
 
 .section-services {
-  padding: 5rem 0 10rem 0;
+  padding: 0 0 10rem 0;
   background-color: $color-black;
   background-size: cover;
   position: relative;
@@ -53,20 +62,6 @@
 .section-pricing {
   padding: 5rem 0 15rem 0;
   background-color: $color-black;
-  // Colors
-// $bg-color: black;
-// $dot-color: pink;
-
-// // Dimensions
-// $dot-size: 2px;
-// $dot-space: 22px;
-
-// 	background:
-// 		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-// 		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-// 		$dot-color;
-// 	background-size: $dot-space $dot-space;
-
 }
 
 .section-testimonial {
@@ -86,6 +81,16 @@
   position: relative;
 }
 
+
+//*************** Banners ****************************//
+.banner{
+  background-color: $color-gray-dark;
+  color: $color-white;
+  text-align: center;
+  padding: 4rem;
+}
+ 
+
 //*****************Home Icons************************///
 
 .hr-box {
@@ -102,7 +107,6 @@
   border: 0;
   border-left: 1px solid $color-primary;
 }
-
 
 .circle {
   border: 2rem solid $color-primary;

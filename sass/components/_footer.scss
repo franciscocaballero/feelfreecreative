@@ -2,33 +2,22 @@ footer {
   padding: 5rem 0 0 0;
   background-color: $color-gray-dark;
   position: relative;
+
   .footer-content {
-    p,
-    i {
-      color: $color-light-Gray;
-      font-size: 2rem;
-    }
-    ul {
-      li {
-        display: inline-block;
-        font-size: 1rem;
-        list-style: none;
-        border: 1px solid $color-primary;
-        border-radius: 100%;
-        padding: 1rem;
-        margin: 0.2rem;
-        text-align: center;
-        transition: .04s;
-        &:hover{
-            background-color: $color-primary;
-            i {
-                color: $color-white;
-            }
-        }
+    a {
+      &:hover {
+        color: $color-primary;
       }
     }
+    p,
+    i,
+    a {
+      color: $color-light-Gray;
+      font-size: 2rem;
+      text-decoration: none;
+    }
   }
-  .go-to-top{
+  .go-to-top {
     margin: 0 auto;
     text-align: center;
     width: 38px;
@@ -41,18 +30,39 @@ footer {
     transition: 0.5s;
     cursor: pointer;
     .arrow-icon {
-        font-size: 3.5rem;
-        text-align: center;
+      font-size: 3.5rem;
+      text-align: center;
     }
   }
   .terms-box {
-
     border-top: 1px solid $color-systemGray-3;
     padding: 1rem 0;
 
     p {
-        color: $color-light-Gray;
+      color: $color-light-Gray;
       font-size: 2rem;
+    }
+  }
+}
+
+.social-media {
+  &__link {
+    display: inline-block;
+    font-size: 1rem;
+    list-style: none;
+    border: 1px solid $color-primary;
+    border-radius: 100%;
+    padding: 1rem;
+    margin: 0.2rem;
+    text-align: center;
+    transition: 0.04s;
+    text-decoration: none;
+    &:hover {
+      background-color: $color-primary;
+      &__icon {
+        color: $color-light-Gray;
+        font-size: 1.5rem;
+      }
     }
   }
 }
