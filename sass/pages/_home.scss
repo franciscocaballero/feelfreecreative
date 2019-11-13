@@ -5,10 +5,9 @@
   background-size: cover;
   position: relative;
   &__text-box {
-    
   }
 
-  &__hero-box{
+  &__hero-box {
     animation: fadeIn 3s;
     animation-delay: 2s;
     animation-iteration-count: 1;
@@ -22,13 +21,28 @@
   }
 }
 .header-about {
-  height: 40vh;
-  background-image: url(../img/header-about.jpg);
-  // filter: brightness(50%);
+  height: 60vh;
+  background-color: $color-black;
+  padding: 15rem 0 0 0;
+  // background-image: url(../img/jump3.png);
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   rgba($color-primary, 0.801),
+  //   rgba($color-black, 0.801)),
+  //   url(../img/jump2.jpg);
+  // background-size: cover;
+  // background-position: center;
+  // position: relative;
+  // opacity:
   // -webkit-filter: grayscale(100%);
-  // // filter: gray;
-  background-size: cover;
-  position: relative;
+  // filter: gray;
+  // background-size: cover;
+  // position: relative;
+  img {
+    height: 50rem;
+    //    -webkit-filter: grayscale(100%);
+    // filter: gray;
+  }
 }
 .header-services {
   height: 40vh;
@@ -39,7 +53,6 @@
   background-size: cover;
   position: relative;
 }
-
 
 .section-feature {
   margin-top: -50rem;
@@ -59,6 +72,34 @@
   position: relative;
 }
 
+.section-projects {
+  padding: 10rem 0 5rem 0;
+  background-color: $color-black-light;
+  .project-box {
+    margin-top: 10rem;
+  }
+  .project__img {
+    height: 27rem;
+    width: 25rem;
+    border-radius: 5px;
+    position: absolute;
+    &--1 {
+      top: 5%;
+      right: -5%;
+      z-index: 10;
+    }
+    &--2 {
+      top: 20%;
+      right: 25%;
+      z-index: 9;
+    }
+    &--3 {
+      top: 35%;
+      z-index: 8;
+      right: 45%;
+    }
+  }
+}
 .section-pricing {
   padding: 5rem 0 15rem 0;
   background-color: $color-black;
@@ -81,15 +122,13 @@
   position: relative;
 }
 
-
 //*************** Banners ****************************//
-.banner{
+.banner {
   background-color: $color-gray-dark;
   color: $color-white;
   text-align: center;
   padding: 4rem;
 }
- 
 
 //*****************Home Icons************************///
 
@@ -121,4 +160,23 @@
     // bottom: 10%;
     top: 5%;
   }
+}
+
+//************* DOT BOXES *************************//
+
+.dot-box {
+  position: relative;
+  transition: translateY(10px);
+  background: linear-gradient(
+        90deg,
+        $bg-color ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+  height: 35%;
+  width: 73%;
+  margin: 0 auto;
 }
