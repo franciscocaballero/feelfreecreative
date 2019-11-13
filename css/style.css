@@ -1,3 +1,15 @@
+.slide-left {
+  position: relative;
+  animation: animateleft 1s; }
+
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0; }
+  to {
+    left: 0;
+    opacity: 1; } }
+
 @keyframes slideDown {
   0% {
     transform: translateY(-100px); }
@@ -93,7 +105,7 @@ body {
     line-height: 60%; }
 
 .heading-third {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff; }
   .heading-third--prime {
     color: #ff375f; }
@@ -280,7 +292,11 @@ body {
 
 .composition {
   position: relative;
-  display: flex; }
+  display: flex;
+  transition-delay: .2s; }
+  .composition__photo:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    z-index: 20; }
   .composition__photo--p1 {
     width: 60%;
     left: 0;
@@ -578,7 +594,7 @@ footer {
   margin-top: -50rem; }
 
 .section-about {
-  padding: 5rem 0 5rem 0;
+  padding: 10rem 0 5rem 0;
   background-color: #000;
   background-size: cover;
   position: relative; }
@@ -591,7 +607,7 @@ footer {
 
 .section-projects {
   padding: 10rem 0 5rem 0;
-  background-color: #181717; }
+  background-color: #000; }
   .section-projects .project-box {
     margin-top: 10rem; }
   .section-projects .project__img {
@@ -611,6 +627,9 @@ footer {
       top: 35%;
       z-index: 8;
       right: 45%; }
+    .section-projects .project__img:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      z-index: 20; }
 
 .section-pricing {
   padding: 5rem 0 15rem 0;
@@ -662,12 +681,18 @@ footer {
 
 .dot-box {
   position: relative;
-  transition: translateY(10px);
-  background: linear-gradient(90deg, #181717 16px, transparent 1%) center, linear-gradient(#181717 16px, transparent 1%) center, #ff375f;
+  background: linear-gradient(90deg, transparent 16px, transparent 1%) center, linear-gradient(transparent 16px, transparent 1%) center, #ff375f;
   background-size: 18px 18px;
   height: 35%;
   width: 73%;
   margin: 0 auto; }
+
+.dot-box-small {
+  background: linear-gradient(90deg, transparent 16px, transparent 1%) center, linear-gradient(transparent 16px, transparent 1%) center, #ff375f;
+  background-size: 18px 18px;
+  height: 12rem;
+  width: 12rem;
+  z-index: 10000000; }
 
 .navigation {
   background-color: #000;

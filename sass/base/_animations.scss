@@ -1,19 +1,23 @@
-//------Slider animations----------------//
+//******** Slider Animations ********************//
 
-// .slide-left {
-//   position: relative;
-//   animation: animateleft 1s;
-// }
-// @keyframes animateleft {
-//   from {
-//     left: -100px;
-//     opacity: 0;
-//   }
-//   to {
-//     left: 0;
-//     opacity: 1;
-//   }
-// }
+.slide-left {
+  position: relative;
+  animation: animateleft 1s;
+}
+@keyframes animateleft {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+
+
+//******** Navigation-bar Animations ********************//
 @keyframes slideDown {
   0% {
     transform: translateY(-100px)

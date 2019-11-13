@@ -59,7 +59,7 @@
 }
 
 .section-about {
-  padding: 5rem 0 5rem 0;
+  padding: 10rem 0 5rem 0;
   background-color: $color-black;
   background-size: cover;
   position: relative;
@@ -74,7 +74,7 @@
 
 .section-projects {
   padding: 10rem 0 5rem 0;
-  background-color: $color-black-light;
+  background-color: $color-black;
   .project-box {
     margin-top: 10rem;
   }
@@ -98,6 +98,11 @@
       z-index: 8;
       right: 45%;
     }
+
+    &:hover {
+      transform: scale(1.05) translateY(-.5rem);
+      z-index: 20;
+     }
   }
 }
 .section-pricing {
@@ -166,7 +171,7 @@
 
 .dot-box {
   position: relative;
-  transition: translateY(10px);
+
   background: linear-gradient(
         90deg,
         $bg-color ($dot-space - $dot-size),
@@ -179,4 +184,20 @@
   height: 35%;
   width: 73%;
   margin: 0 auto;
+}
+
+
+.dot-box-small{
+  background: linear-gradient(
+        90deg,
+        $bg-color ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+  height: 12rem;
+  width: 12rem;
+  z-index: 10000000;
 }
