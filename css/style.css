@@ -293,7 +293,7 @@ body {
 .composition {
   position: relative;
   display: flex;
-  transition-delay: .2s; }
+  transition-delay: .4s; }
   .composition__photo:hover {
     transform: scale(1.05) translateY(-0.5rem);
     z-index: 20; }
@@ -607,7 +607,8 @@ footer {
 
 .section-projects {
   padding: 10rem 0 5rem 0;
-  background-color: #000; }
+  background-color: #000;
+  transition: .2s; }
   .section-projects .project-box {
     margin-top: 10rem; }
   .section-projects .project__img {
@@ -681,17 +682,17 @@ footer {
 
 .dot-box {
   position: relative;
-  background: linear-gradient(90deg, transparent 16px, transparent 1%) center, linear-gradient(transparent 16px, transparent 1%) center, #ff375f;
+  background: linear-gradient(90deg, #000 16px, transparent 1%) center, linear-gradient(#000 16px, transparent 1%) center, #ff375f;
   background-size: 18px 18px;
   height: 35%;
   width: 73%;
   margin: 0 auto; }
 
 .dot-box-small {
-  background: linear-gradient(90deg, transparent 16px, transparent 1%) center, linear-gradient(transparent 16px, transparent 1%) center, #ff375f;
+  background-image: radial-gradient(#ff375f 20%, transparent 20%);
   background-size: 18px 18px;
-  height: 12rem;
-  width: 12rem;
+  height: 15rem;
+  width: 15rem;
   z-index: 10000000; }
 
 .navigation {

@@ -75,6 +75,7 @@
 .section-projects {
   padding: 10rem 0 5rem 0;
   background-color: $color-black;
+  transition: .2s;
   .project-box {
     margin-top: 10rem;
   }
@@ -188,16 +189,21 @@
 
 
 .dot-box-small{
-  background: linear-gradient(
-        90deg,
-        $bg-color ($dot-space - $dot-size),
-        transparent 1%
-      )
-      center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
+  // background: linear-gradient(
+  //       90deg,
+  //       $bg-color ($dot-space - $dot-size),
+  //       transparent 100%
+  //     )
+  //     center,
+  //   linear-gradient($bg-color ($dot-space - $dot-size), transparent 100%) center,
+  //   $dot-color;
+  // background-size: $dot-space $dot-space;
+  // height: 12rem;
+  // width: 12rem;
+  background-image: radial-gradient($color-primary 20%,transparent 20%);
+  // background-position: 0 0;
   background-size: $dot-space $dot-space;
-  height: 12rem;
-  width: 12rem;
+  height: 15rem;
+  width: 15rem;
   z-index: 10000000;
 }
