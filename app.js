@@ -80,3 +80,16 @@ window.addEventListener('scroll', function () {
         navBar.classList.remove('sticky');
     }
 });
+
+
+
+//************ON LOAD Spinner */
+
+let spinnerWrapper = document.getElementById("spinner-wrapper");
+let body = document.querySelector('body');
+
+// body.style.height = '0px';
+window.addEventListener('load', function(){
+    
+    spinnerWrapper.style.display = 'none';
+});

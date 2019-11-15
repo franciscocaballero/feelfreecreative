@@ -1,7 +1,7 @@
 .composition {
     position: relative;
-    display: flex;
     transition-delay: .4s;
+    
     &__photo {
         &:hover {
            transform: scale(1.05) translateY(-.5rem);
@@ -22,6 +22,7 @@
         position: absolute;
     }
     }
+    
     
 }
 
