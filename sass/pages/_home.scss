@@ -4,8 +4,6 @@
   padding: 15rem 0 0 0;
   background-size: cover;
   position: relative;
-  &__text-box {
-  }
 
   &__hero-box {
     animation: fadeIn 3s;
@@ -19,43 +17,17 @@
     height: 70rem;
     margin-top: -15rem;
   }
-}
-.header-about {
-  height: 60vh;
-  background-color: $color-black;
-  padding: 15rem 0 0 0;
-  // background-image: url(../img/jump3.png);
-  // background-image: linear-gradient(
-  //   to right bottom,
-  //   rgba($color-primary, 0.801),
-  //   rgba($color-black, 0.801)),
-  //   url(../img/jump2.jpg);
-  // background-size: cover;
-  // background-position: center;
-  // position: relative;
-  // opacity:
-  // -webkit-filter: grayscale(100%);
-  // filter: gray;
-  // background-size: cover;
-  // position: relative;
-  img {
-    height: 50rem;
-    //    -webkit-filter: grayscale(100%);
-    // filter: gray;
+
+  @include respond(tab-port) {
+    padding: 15rem 5rem 5rem 0;
   }
-}
-.header-services {
-  height: 40vh;
-  background-image: url(../img/header-services.jpg);
-  // filter: brightness(50%);
-  // -webkit-filter: grayscale(100%);
-  // // filter: gray;
-  background-size: cover;
-  position: relative;
 }
 
 .section-feature {
   margin-top: -50rem;
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 .section-about {
@@ -75,7 +47,7 @@
 .section-projects {
   padding: 10rem 0 5rem 0;
   background-color: $color-black;
-  transition: .2s;
+  transition: 0.2s;
   .project-box {
     margin-top: 10rem;
   }
@@ -101,9 +73,9 @@
     }
 
     &:hover {
-      transform: scale(1.05) translateY(-.5rem);
+      transform: scale(1.05) translateY(-0.5rem);
       z-index: 20;
-     }
+    }
   }
 }
 .section-pricing {
@@ -128,7 +100,7 @@
   position: relative;
 }
 
-//*************** Banners ****************************//
+/* BANNERS */
 .banner {
   background-color: $color-gray-dark;
   color: $color-white;
@@ -153,11 +125,10 @@
   border-left: 1px solid $color-primary;
 }
 
-
 //************* DOT BOXES *************************//
 
-.dot-box-small{
-  background-image: radial-gradient($color-primary 20%,transparent 20%);
+.dot-box-small {
+  background-image: radial-gradient($color-primary 20%, transparent 20%);
   // background-position: 0 0;
   background-size: 18px 18px;
   height: 15rem;
@@ -168,8 +139,8 @@
   top: 300px;
   left: 280px;
 }
-.dot-box-large{
-  background-image: radial-gradient($color-primary 20%,transparent 20%);
+.dot-box-large {
+  background-image: radial-gradient($color-primary 20%, transparent 20%);
   background-position: 0 0;
   background-size: 18px 18px;
   height: 34%;
@@ -178,18 +149,20 @@
   position: relative;
 }
 
-#spinner-wrapper {
-  background-color: $color-primary;
-  height: 100%;
-  width: 100%;
-  
+/* LOADERS */
 
-  .spinner {
-    height: 100px;
-    width: 100px;
-    background-color: $color-white;
-    border-radius: 100%;
-    margin: 0 auto;
-  
-  }
-}
+// #load-wrapper {
+//   background-color: $color-primary;
+//   height: 100%;
+//   width: 100%;
+//   position: fixed;
+//   z-index: 100000000;
+
+//   .loader {
+//     height: 100px;
+//     width: 100px;
+//     background-color: $color-white;
+//     border-radius: 100%;
+//     animation: loader 0.8s infinite;
+//   }
+// }

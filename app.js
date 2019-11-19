@@ -57,39 +57,51 @@ for (i = 0; i < dots.length; i++) {
 // }
 
 
-/// - NAV BAR Functionlity 
-function scanDocument() {
-    let sectionList = document.querySelectorAll(".hidden");
-    sectionList.forEach(function (section) {
-        if (isVisible(section)) {
-            section.classList.remove('hidden');
-        };
-    });
-}
+/* NAV BAR FUNCTIONALITY */
+// function scanDocument() {
+//     let sectionList = document.querySelectorAll(".hidden");
+//     sectionList.forEach(function (section) {
+//         if (isVisible(section)) {
+//             section.classList.remove('hidden');
+//         };
+//     });
+// }
 
-document.addEventListener("scroll", _.throttle(scanDocument, 200));
+// document.addEventListener("scroll", _.throttle(scanDocument, 200));
 
-var scrollPositionY = window.scrollY;
+// var scrollPositionY = window.scrollY;
 
-window.addEventListener('scroll', function () {
-    var navBar = document.querySelector(".navigation");
-    scrollPositionY = window.scrollY;
-    if (scrollPositionY >= 700) {
-        navBar.classList.add('sticky');
-    } else {
-        navBar.classList.remove('sticky');
-    }
+// window.addEventListener('scroll', function () {
+//     var navBar = document.querySelector(".navigation");
+//     scrollPositionY = window.scrollY;
+//     if (scrollPositionY >= 700) {
+//         navBar.classList.add('sticky');
+//     } else {
+//         navBar.classList.remove('sticky');
+//     }
+// });
+
+/* NAV BAR RESPONSIVE */
+
+
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
 });
 
+/* ON LOAD Spinner */
 
-
-//************ON LOAD Spinner */
-
-let spinnerWrapper = document.getElementById("spinner-wrapper");
+let loadWrapper = document.getElementById("load-wrapper");
 let body = document.querySelector('body');
 
 // body.style.height = '0px';
 window.addEventListener('load', function(){
     
-    spinnerWrapper.style.display = 'none';
+    loadWrapper.style.display = 'none';
+    loadWrapper.style.position = 'null';
+    // spinnerWrapper.style.zindex = 'null';
+    
 });
