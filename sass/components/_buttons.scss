@@ -5,6 +5,11 @@
   text-transform: capitalize;
   display: inline-block;
   cursor: pointer;
+ @include respond(tab-land-max){
+  // font-size: 1.2rem;
+  // padding: 2rem 2rem;
+ 
+ }
 
   &:link,
   &:visited {
@@ -118,4 +123,13 @@
     left: 0;
     right: 0;
   }
+}
+
+.btn-box {
+  @include respond(tab-land-max) {
+    // display: block !important;
+    // display: flex;
+
+  }
+
 }

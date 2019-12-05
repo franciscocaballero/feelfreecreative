@@ -1,7 +1,10 @@
 .composition {
     position: relative;
     transition-delay: .4s;
-    
+    // @include respond(tab-land-max) {
+    //     display: flex;
+    //     flex-direction: column;
+    //   }
     &__photo {
         &:hover {
            transform: scale(1.05) translateY(-.5rem);
@@ -13,6 +16,10 @@
         top: 2rem;
         position: absolute;
         z-index: 2;
+        @include respond(tab-land-max) {
+            // height: 50rem;
+            display: none;
+          }
      }
     &--p2{
         width: 110%;

@@ -37,4 +37,12 @@
   &:hover > * {
     color: $color-white;
   }
+
+
+  @include respond(tab-land-max) {
+    display: flex;
+  
+    flex-direction: column;
+    // justify-content: flex-end;
+  }
 }

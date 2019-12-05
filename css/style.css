@@ -78,6 +78,15 @@ html {
   font-size: 62.5%;
   /* // to get 16px do 10/16 = 62.5% */
   scroll-behavior: smooth; }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (min-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 /* Project wide font definitions  */
 body {
@@ -101,6 +110,9 @@ body {
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards; }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--main {
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 13rem;
@@ -112,6 +124,9 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary {
+      font-size: 1rem; } }
 
 .heading-second {
   color: #e6e9ec;
@@ -150,6 +165,9 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0; }
+  @media only screen and (max-width: 75em) {
+    .heading-paragraph {
+      display: none; } }
 
 .heading-footer {
   font-size: 3rem; }
@@ -326,6 +344,9 @@ body {
     top: 2rem;
     position: absolute;
     z-index: 2; }
+    @media only screen and (max-width: 75em) {
+      .composition__photo--p1 {
+        display: none; } }
   .composition__photo--p2 {
     width: 110%;
     left: 10%;
@@ -410,6 +431,10 @@ body {
     background-color: #ff375f; }
   .feature-box:hover > * {
     color: #fff; }
+  @media only screen and (max-width: 75em) {
+    .feature-box {
+      display: flex;
+      flex-direction: column; } }
 
 footer {
   padding: 5rem 0 0 0;
@@ -558,38 +583,16 @@ footer {
 .active, .dot:hover {
   background-color: #ff375f; }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
-  .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
-
 .header {
   height: 95vh;
   background-color: #010101;
-  padding: 15rem 0 0 0;
-  background-size: cover;
-  position: relative; }
+  padding: 15rem 0 0 0; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem !important;
+      height: 75vh; } }
   .header__hero-box {
     animation: fadeIn 3s;
     animation-delay: 2s;
@@ -598,22 +601,28 @@ footer {
     opacity: 0; }
   .header__hero-box--img {
     height: 70rem;
-    margin-top: -15rem; }
-  @media only screen and (max-width: 56.25em) {
-    .header {
-      padding: 15rem 5rem 5rem 0; } }
+    margin-top: -15rem;
+    z-index: -10; }
+    @media only screen and (max-width: 75em) {
+      .header__hero-box--img {
+        display: none; } }
 
 .section-feature {
   margin-top: -50rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .section-feature {
-      display: none; } }
+      display: none;
+      margin-top: 0; } }
 
 .section-about {
   padding: 10rem 0 5rem 0;
   background-color: #010101;
-  background-size: cover;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .section-about {
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; } }
 
 .section-services {
   padding: 0 0 10rem 0;
@@ -685,17 +694,6 @@ footer {
   color: #010101;
   border: 0;
   border-left: 1px solid #ff375f; }
-
-.dot-box-small {
-  background-image: radial-gradient(#ff375f 20%, transparent 20%);
-  background-size: 18px 18px;
-  height: 15rem;
-  width: 15rem;
-  z-index: 10;
-  position: absolute;
-  z-index: 1000;
-  top: 300px;
-  left: 280px; }
 
 .dot-box-large {
   background-image: radial-gradient(#ff375f 20%, transparent 20%);

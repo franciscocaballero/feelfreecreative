@@ -19,6 +19,9 @@ body {
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    @include respond(tab-land-max) {
+      font-size: 5rem;
+     }
   }
   &--sub {
     display: block;
@@ -33,6 +36,10 @@ body {
     animation-fill-mode: forwards;
     opacity: 0;
   }
+
+  @include respond(tab-land-max) {
+    font-size: 1rem;
+   }
 }
 
 .heading-second {
@@ -67,6 +74,7 @@ body {
   border-bottom: 0.3rem solid $color-white;
 }
 .heading-paragraph {
+  
   font-size: 2rem;
   color: $color-systemGray-2;
   font-weight: 100;
@@ -76,6 +84,9 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
+  @include respond(tab-land-max) {
+    display: none;
+   }
 }
 
 .heading-footer {
