@@ -1,4 +1,10 @@
 .feature-box {
+  @include respond(tab-land-max) {
+    padding: 2.5rem 2.5rem;
+    margin: 2rem 0 0;
+    // width: 90%;
+    
+  }
   animation: fadein 4s;
   background-color: $color-systemGray-3;
   font-size: 1.5rem;
@@ -36,13 +42,5 @@
   }
   &:hover > * {
     color: $color-white;
-  }
-
-
-  @include respond(tab-land-max) {
-    display: flex;
-  
-    flex-direction: column;
-    // justify-content: flex-end;
   }
 }
