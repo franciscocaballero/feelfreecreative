@@ -1,35 +1,41 @@
 .composition {
-    position: relative;
-    transition-delay: .4s;
-    // @include respond(tab-land-max) {
-    //     display: flex;
-    //     flex-direction: column;
-    //   }
-    &__photo {
-        &:hover {
-           transform: scale(1.05) translateY(-.5rem);
-           z-index: 20;
-          }
-    &--p1{
-        width: 60%;
-        left: 0;
-        top: 2rem;
-        position: absolute;
-        z-index: 2;
-        @include respond(tab-land-max) {
-            // height: 50rem;
-            display: none;
-          }
-     }
-    &--p2{
-        width: 110%;
-        left: 10%;
-        right: 0;
-        top: -2rem;
-        position: absolute;
+  position: relative;
+  transition-delay: 0.4s;
+  // @include respond(tab-land-max) {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  &__photo {
+    &:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      z-index: 20;
     }
+    &--p1 {
+      width: 60%;
+      left: 0;
+      top: 2rem;
+      position: absolute;
+      z-index: 2;
+      @include respond(tab-land-max) {
+        // height: 50rem;
+        display: none;
+      }
     }
-    
-    
-}
+    &--p2 {
+      width: 110%;
+      left: 10%;
+      right: 0;
+      top: -2rem;
+      position: absolute;
 
+      @include respond(tab-land-max) {
+        @include flexPosition;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: relative;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

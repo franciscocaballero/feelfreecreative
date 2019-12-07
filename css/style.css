@@ -117,7 +117,6 @@ body {
     display: block;
     font-size: 13rem;
     padding: 0;
-    margin-left: -2px;
     line-height: 60%;
     animation: fadeIn 3s;
     animation-delay: 1s;
@@ -128,16 +127,15 @@ body {
     .heading-primary {
       font-size: 1rem; } }
 
-.heading-second {
-  color: #e6e9ec;
-  font-size: 13rem;
-  letter-spacing: 0px; }
-
 .heading-secondary {
   font-size: 4rem;
   display: block;
   padding: 0;
   color: #fff; }
+  @media only screen and (max-width: 75em) {
+    .heading-secondary {
+      font-size: 3rem;
+      text-align: center; } }
   .heading-secondary--main {
     margin: 0; }
   .heading-secondary--sub {
@@ -159,7 +157,6 @@ body {
   font-size: 2rem;
   color: #8e8e93;
   font-weight: 100;
-  animation: fadein 3s;
   animation: fadeIn 3s;
   animation-delay: 1s;
   animation-iteration-count: 1;
@@ -167,7 +164,8 @@ body {
   opacity: 0; }
   @media only screen and (max-width: 75em) {
     .heading-paragraph {
-      display: none; } }
+      font-size: 1.5rem;
+      text-align: center; } }
 
 .heading-footer {
   font-size: 3rem; }
@@ -334,7 +332,7 @@ body {
 
 .composition {
   position: relative;
-  transition-delay: .4s; }
+  transition-delay: 0.4s; }
   .composition__photo:hover {
     transform: scale(1.05) translateY(-0.5rem);
     z-index: 20; }
@@ -353,6 +351,19 @@ body {
     right: 0;
     top: -2rem;
     position: absolute; }
+    @media only screen and (max-width: 75em) {
+      .composition__photo--p2 {
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: relative;
+        margin-top: 2rem; } }
 
 .form input, .form textarea {
   background-color: #111111;
@@ -604,7 +615,8 @@ footer {
         -webkit-flex-direction: column;
         flex-direction: column;
         align-items: center;
-        width: 100%; } }
+        width: 100%;
+        margin: 0 auto; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
     @media only screen and (max-width: 75em) {
@@ -613,9 +625,18 @@ footer {
         -webkit-flex-direction: column;
         flex-direction: column;
         align-items: center;
-        width: 100%; } }
+        width: 100%;
+        margin: 0 auto; } }
   .row .col-2-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    @media only screen and (max-width: 75em) {
+      .row .col-2-of-3 {
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto; } }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
     @media only screen and (max-width: 75em) {
@@ -624,7 +645,8 @@ footer {
         -webkit-flex-direction: column;
         flex-direction: column;
         align-items: center;
-        width: 100%; } }
+        width: 100%;
+        margin: 0 auto; } }
   .row .col-2-of-4 {
     width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
@@ -636,7 +658,7 @@ footer {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      padding: 5rem; } }
+      padding: 0 2rem; } }
 
 .header {
   height: 95vh;
@@ -667,16 +689,10 @@ footer {
   padding: 10rem 0 5rem 0;
   background-color: #010101;
   position: relative; }
-  @media only screen and (max-width: 75em) {
-    .section-about {
-      display: flex;
-      -webkit-flex-direction: column;
-      flex-direction: column; } }
 
 .section-services {
   padding: 0 0 10rem 0;
   background-color: #010101;
-  background-size: cover;
   position: relative; }
 
 .section-projects {
@@ -754,6 +770,9 @@ footer {
   z-index: 1000;
   top: 300px;
   left: 280px; }
+  @media only screen and (max-width: 75em) {
+    .dot-box-small {
+      display: none; } }
 
 .dot-box-large {
   background-image: radial-gradient(#ff375f 20%, transparent 20%);
@@ -763,6 +782,9 @@ footer {
   width: 73%;
   margin: 0 auto;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .dot-box-large {
+      display: none; } }
 
 /* LOADERS */
 .navigation {
