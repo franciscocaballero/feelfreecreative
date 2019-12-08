@@ -92,6 +92,9 @@
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
+  @include respond(tab-land-max){
+    padding-bottom: 5rem;
+  }
 }
 .scroller {
   width: 3px;

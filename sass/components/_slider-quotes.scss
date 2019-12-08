@@ -37,6 +37,9 @@
   background: $color-black;
   display: flex;
   justify-content: space-between;
+  @include respond(tab-land-max) {
+    justify-content: space-around;
+  }
   // .next {
   //     position: absolute;
   //     left: 100%;
@@ -63,6 +66,10 @@
 
     &:hover {
       color: $color-primary;
+    }
+
+    @include respond(tab-land-max) {
+      margin-top: -3.5rem;
     }
   }
 

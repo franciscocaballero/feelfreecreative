@@ -38,7 +38,7 @@ body {
   }
 
   @include respond(tab-land-max) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 .heading-secondary {
@@ -86,6 +86,13 @@ body {
   }
 }
 
+.service-paragraph {
+  @include respond(tab-land-max) {
+    font-size: 1.5rem;
+    color: $color-systemGray-2;
+    text-align: center;
+  }
+}
 .heading-footer {
   font-size: 3rem;
 }
@@ -93,6 +100,7 @@ body {
 .about-span {
   color: $color-primary;
   font-size: 1.5rem;
+  font-weight: 100;
   font-weight: 100;
 }
 .heading-line {

@@ -1,4 +1,9 @@
 .earth {
+    @include respond(tab-land-max){
+        width: 35rem;
+        height: 35rem;
+        margin-bottom: 5rem;
+      }
     width: 40rem;
     height: 40rem;
     // position: fixed;

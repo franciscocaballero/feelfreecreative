@@ -6,6 +6,7 @@
   // position: relative;
   @include respond(tab-land-max) {
     height: 100%;
+    padding: 13rem 0 0 0;
   }
   &__hero-box {
     animation: fadeIn 3s;
@@ -30,22 +31,18 @@
 .section-feature {
   background-color: $color-black;
   margin-top: -50rem;
- 
 }
 
 .section-about {
   padding: 10rem 0 5rem 0;
   background-color: $color-black;
   position: relative;
-
 }
 
 .section-services {
   padding: 0 0 10rem 0;
   background-color: $color-black;
-  // background-size: cover;
   position: relative;
-  
 }
 
 .section-projects {
@@ -95,6 +92,12 @@
   img {
     height: 500px;
     width: 500px;
+    @include respond(tab-land-max){
+      height: 45rem;
+      width: 45rem;
+      margin-bottom: 5rem;
+
+    }
   }
 }
 
@@ -142,10 +145,10 @@
   z-index: 1000;
   top: 300px;
   left: 280px;
-  
-    @include respond(tab-land-max) {
-      display: none;
-    }
+
+  @include respond(tab-land-max) {
+    display: none;
+  }
 }
 
 .dot-box-large {

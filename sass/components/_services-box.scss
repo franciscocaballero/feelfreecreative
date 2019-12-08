@@ -6,15 +6,27 @@
     border-radius: 50%;
   }
   .profile-pic {
-
     height: auto;
     width: 100%;
+    @include respond(tab-land-max) {
+      // height: 50rem;
+      margin-bottom: 2rem;
+    }
   }
   .profile-pic-2 {
     display: inline;
     margin: 0 auto;
-    margin-left: -25%; //centers the image
+    margin-left: -25%;
     width: auto;
     height: 100%;
+    @include respond(tab-land-max) {
+      // height: 50rem;
+      margin-bottom: 2rem;
+    }
+    
+  }
+  @include respond(tab-land-max) {
+    // height: 50rem;
+    margin-bottom: 5rem;
   }
 }
