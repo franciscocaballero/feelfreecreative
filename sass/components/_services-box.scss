@@ -8,7 +8,7 @@
   .profile-pic {
     height: auto;
     width: 100%;
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       // height: 50rem;
       margin-bottom: 2rem;
     }
@@ -19,13 +19,13 @@
     margin-left: -25%;
     width: auto;
     height: 100%;
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       // height: 50rem;
       margin-bottom: 2rem;
     }
     
   }
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     // height: 50rem;
     margin-bottom: 5rem;
   }

@@ -4,7 +4,7 @@
   padding: 15rem 0 0 0;
   // background-size: cover;
   // position: relative;
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     height: 100%;
     padding: 13rem 0 0 0;
   }
@@ -21,7 +21,7 @@
     margin-top: -15rem;
     z-index: -10;
 
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       // height: 50rem;
       display: none;
     }
@@ -31,6 +31,9 @@
 .section-feature {
   background-color: $color-black;
   margin-top: -50rem;
+  @include respond(tab-port-max) {
+    height: 76%;
+  }
 }
 
 .section-about {
@@ -92,7 +95,7 @@
   img {
     height: 500px;
     width: 500px;
-    @include respond(tab-land-max){
+    @include respond(tab-port-max){
       height: 45rem;
       width: 45rem;
       margin-bottom: 5rem;
@@ -146,7 +149,7 @@
   top: 300px;
   left: 280px;
 
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     display: none;
   }
 }
@@ -160,7 +163,7 @@
   margin: 0 auto;
   position: relative;
 
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     display: none;
   }
 }

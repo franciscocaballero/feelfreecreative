@@ -5,7 +5,7 @@ body {
 
 //-----Headings ---------------------//
 .heading-primary {
-  z-index: 1000;
+  z-index: 100;
   position: relative;
   padding: 0;
   margin: 0;
@@ -19,7 +19,7 @@ body {
     opacity: 0;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       font-size: 5rem;
     }
   }
@@ -36,9 +36,18 @@ body {
     animation-fill-mode: forwards;
     opacity: 0;
   }
-
-  @include respond(tab-land-max) {
-    font-size: 2rem;
+  &--banner {
+    display: block;
+    font-size: 8rem;
+    padding: 0;
+    margin: 0;
+    animation: fadeIn 3s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    @include respond(tab-port-max) {
+      font-size: 3rem;
+    }
   }
 }
 .heading-secondary {
@@ -47,7 +56,7 @@ body {
   padding: 0;
   color: $color-white;
 
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     font-size: 3rem;
     text-align: center;
   }
@@ -80,14 +89,14 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     font-size: 1.5rem;
     text-align: center;
   }
 }
 
 .service-paragraph {
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     font-size: 1.5rem;
     color: $color-systemGray-2;
     text-align: center;

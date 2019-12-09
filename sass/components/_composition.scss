@@ -1,7 +1,7 @@
 .composition {
   position: relative;
   transition-delay: 0.4s;
-  // @include respond(tab-land-max) {
+  // @include respond(tab-port-max) {
   //     display: flex;
   //     flex-direction: column;
   //   }
@@ -16,7 +16,7 @@
       top: 2rem;
       position: absolute;
       z-index: 2;
-      @include respond(tab-land-max) {
+      @include respond(tab-port-max) {
         // height: 50rem;
         display: none;
       }
@@ -28,7 +28,7 @@
       top: -2rem;
       position: absolute;
 
-      @include respond(tab-land-max) {
+      @include respond(tab-port-max) {
         @include flexPosition;
         left: 0;
         right: 0;

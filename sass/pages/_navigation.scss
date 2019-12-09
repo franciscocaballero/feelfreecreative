@@ -1,27 +1,30 @@
 .navigation {
   background-color: $color-black;
-  padding: 2rem 2rem;
-  z-index: 1;
-  // width: 100%;
-
+  padding: 1rem 1rem;
+  z-index: 999;
   color: $color-black;
   list-style: none;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 
   @include respond(tab-land) {
     .navigation {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
       height: 70px;
-     &__main {
-         
-          display: flex;
-          margin-right: 30px;
-          flex-direction: row;
-          justify-content: flex-end;
-      } 
+    
+      &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        // margin-right: 30px;
+        // flex-direction: row;
+        // margin: auto 0;
+        // justify-content: flex-end;
+      }
       &__item {
-          margin: 0;
+        margin: 0;
       }
 
       &__link {
@@ -30,17 +33,16 @@
 
       &__logo {
         margin-top: 0;
-        
       }
     }
-        .navbar-toggle {
-            display: none;
-        }
+    .navbar-toggle {
+      display: none;
+    }
   }
   i {
     padding-bottom: 2rem;
   }
-  &__logo{
+  &__logo {
     display: inline-block;
     font-size: 20px;
     // margin-top: 10px;
@@ -56,23 +58,13 @@
     background-color: $color-black;
     list-style-type: none;
     display: none;
-    // color: $color-white;
-    // animation: slideDown 2s cubic-bezier(0, 0.3, 0.5, 1.1);
-    // animation-delay: 3s;
-    // animation-iteration-count: 1;
-    // animation-fill-mode: forwards;
-    // opacity: 0;
-    
   }
-  &__item{
+  &__item {
     text-align: center;
     margin: 15px auto;
     list-style: none;
-
-
   }
   &__link {
-
     &:link,
     &:visited {
       font-weight: 400;
@@ -91,20 +83,19 @@
       transition: all 0.4s;
     }
   }
- 
+
   .navbar-toggle {
     position: absolute;
     top: 10px;
     right: 20px;
-    cursor: pointer; 
+    cursor: pointer;
     color: $color-white;
     font-size: 24px;
   }
-  
+
   .active {
     display: block;
   }
-  
 }
 
 .sticky {
@@ -114,43 +105,3 @@
   width: 100%;
   z-index: 9999;
 }
-
-
-
-
-// @media screen and (min-width: 900px) {
-//   .navigation {
-//       display: flex;
-//       justify-content: space-between;
-//       padding-bottom: 0;
-//       height: 70px;
-//       align-items: center;
-//      &__main {
-//           display: flex;
-//           margin-right: 30px;
-//           flex-direction: row;
-//           justify-content: flex-end;
-//       } 
-//       &__item {
-//           margin: 0;
-//       }
-
-//       &__link {
-//         margin-left: 40px;
-
-//       }
-
-//       &__logo {
-//         margin-top: 0;
-//       }
-//       .navbar-toggle {
-//           display: none;
-//       }
-//   }
-
-    // .logo:hover,
-    // .nav-links:hover {
-    //     color: rgba(255, 255, 255, 1);
-    // }
-  
-// }

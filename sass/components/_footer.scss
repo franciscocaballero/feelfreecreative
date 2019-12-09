@@ -1,5 +1,5 @@
 footer {
-  @include respond(tab-land-max){
+  @include respond(tab-port-max){
     text-align: center;
   }
   padding: 5rem 0 0 0;

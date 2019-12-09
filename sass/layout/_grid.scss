@@ -19,14 +19,14 @@
   // 100% of divs width - gutter / how many colums
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       @include flexPosition;
     }
   }
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       @include flexPosition;
     }
   }
@@ -35,14 +35,14 @@
     width: calc(
       2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
     );
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       @include flexPosition;
     }
   }
 
   .col-1-of-4 {
     width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       @include flexPosition;
     }
   }
@@ -57,7 +57,7 @@
       3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal}
     );
   }
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;

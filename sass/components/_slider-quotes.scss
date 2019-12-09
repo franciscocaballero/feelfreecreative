@@ -37,7 +37,7 @@
   background: $color-black;
   display: flex;
   justify-content: space-between;
-  @include respond(tab-land-max) {
+  @include respond(tab-port-max) {
     justify-content: space-around;
   }
   // .next {
@@ -68,7 +68,7 @@
       color: $color-primary;
     }
 
-    @include respond(tab-land-max) {
+    @include respond(tab-port-max) {
       margin-top: -3.5rem;
     }
   }
