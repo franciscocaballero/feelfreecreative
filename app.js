@@ -86,16 +86,24 @@ for (i = 0; i < dots.length; i++) {
 
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
+let body = document.querySelector('body');
 
 navBarToggle.addEventListener('click', function () {
     
     mainNav.classList.toggle('active');
 });
 
+// body.addEventListener('click', function() {
+//     mainNav.classList.remove('active');
+// });
+// navBarToggle.addEventListener('click', function () {
+    
+//     body.classList.toggle('active');
+// });
+
 /* ON LOAD Spinner */
 
 let loadWrapper = document.getElementById("load-wrapper");
-let body = document.querySelector('body');
 
 // body.style.height = '0px';
 window.addEventListener('load', function(){

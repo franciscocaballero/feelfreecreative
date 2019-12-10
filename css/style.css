@@ -705,11 +705,10 @@ footer {
 .header {
   height: 95vh;
   background-color: #010101;
-  padding: 15rem 0 0 0; }
+  padding: 25rem 0 0 0; }
   @media only screen and (max-width: 56.25em) {
     .header {
-      height: 100%;
-      padding: 13rem 0 0 0; } }
+      padding: 15rem 0 0 0; } }
   .header__hero-box {
     animation: fadeIn 3s;
     animation-delay: 2s;
@@ -840,7 +839,7 @@ footer {
 /* LOADERS */
 .navigation {
   background-color: #010101;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1.5rem;
   z-index: 999;
   color: #010101;
   list-style: none;
@@ -853,11 +852,7 @@ footer {
       height: 70px; }
       .navigation .navigation__main {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center; }
-      .navigation .navigation__item {
-        margin: 0; }
+        justify-content: center; }
       .navigation .navigation__link {
         margin-left: 40px; }
       .navigation .navigation__logo {
@@ -879,7 +874,8 @@ footer {
   .navigation__main {
     background-color: #010101;
     list-style-type: none;
-    display: none; }
+    display: none;
+    width: 100vw; }
   .navigation__item {
     text-align: center;
     margin: 15px auto;
