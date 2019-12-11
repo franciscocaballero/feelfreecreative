@@ -4,25 +4,29 @@
   z-index: 999;
   color: $color-black;
   list-style: none;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
- 
+  // position: fixed;
+  // width: 100vw;
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     .navigation {
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-between;
+      padding-bottom: 0;
       height: 70px;
-    
+      align-items: center;
+      flex-wrap: nowrap;
       &__main {
-       display: flex;
-      //  justify-content: center;
-      //  flex-direction: row;
-       justify-content: center;
+      
+        display: inline-flex;
+    
+        margin-right: 30px;
+        align-items: flex-end !important; 
+        // justify-content: flex-end;
       }
       &__item {
-        // margin: 0;
-      
+        margin: 0;
       }
 
       &__link {
@@ -56,8 +60,6 @@
     background-color: $color-black;
     list-style-type: none;
     display: none;
-    width: 100vw;
-    
   }
   &__item {
     text-align: center;

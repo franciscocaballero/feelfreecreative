@@ -90,7 +90,9 @@ html {
 
 /* Project wide font definitions  */
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
 body {
   font-family: "Hind Siliguri", sans-serif;
@@ -842,17 +844,22 @@ footer {
   padding: 1.5rem 1.5rem;
   z-index: 999;
   color: #010101;
-  list-style: none;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  width: 100vw; }
-  @media only screen and (min-width: 75em) {
+  list-style: none; }
+  @media only screen and (min-width: 56.25em) {
     .navigation .navigation {
-      height: 70px; }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+      flex-wrap: nowrap; }
       .navigation .navigation__main {
-        display: flex;
-        justify-content: center; }
+        display: inline-flex;
+        margin-right: 30px;
+        align-items: flex-end !important; }
+      .navigation .navigation__item {
+        margin: 0; }
       .navigation .navigation__link {
         margin-left: 40px; }
       .navigation .navigation__logo {
@@ -874,8 +881,7 @@ footer {
   .navigation__main {
     background-color: #010101;
     list-style-type: none;
-    display: none;
-    width: 100vw; }
+    display: none; }
   .navigation__item {
     text-align: center;
     margin: 15px auto;
