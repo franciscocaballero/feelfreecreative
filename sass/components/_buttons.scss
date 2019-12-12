@@ -43,6 +43,12 @@
       color: $color-white;
     }
   }
+
+  &--maintenace{
+    color: $color-white;
+    border: 2px solid $color-white;
+    
+  }
 }
 
 .btn-more {

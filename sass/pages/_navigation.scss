@@ -19,11 +19,10 @@
       flex-wrap: nowrap;
       &__main {
       
-        display: inline-flex;
+        display: flex;
     
         margin-right: 30px;
-        align-items: flex-end !important; 
-        // justify-content: flex-end;
+        justify-content: flex-end;
       }
       &__item {
         margin: 0;
