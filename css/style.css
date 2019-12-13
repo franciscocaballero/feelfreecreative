@@ -383,6 +383,9 @@ body {
         top: 0;
         position: relative;
         margin-top: 2rem; } }
+    @media only screen and (max-width: 75em) {
+      .composition__photo--p2 {
+        width: 90%; } }
 
 .form input, .form textarea {
   background-color: #111111;
@@ -822,6 +825,10 @@ footer {
   @media only screen and (max-width: 56.25em) {
     .dot-box-small {
       display: none; } }
+  @media only screen and (max-width: 100em) {
+    .dot-box-small {
+      top: 250px;
+      left: 230px; } }
 
 .dot-box-large {
   background-image: radial-gradient(#ff375f 20%, transparent 20%);

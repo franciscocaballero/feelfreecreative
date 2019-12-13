@@ -36,6 +36,9 @@
         position: relative;
         margin-top: 2rem;
       }
+      @include respond(tab-land-max ) {
+        width: 90%;
+      }
     }
   }
 }

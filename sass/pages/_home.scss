@@ -150,6 +150,10 @@
   @include respond(tab-port-max) {
     display: none;
   }
+  @include respond(mid-desktop) {
+    top: 250px;
+    left: 230px;
+  }
 }
 
 .dot-box-large {

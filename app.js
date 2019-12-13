@@ -34,9 +34,11 @@ function showSlides(n) {
 
     setTimeout(showSlides, 5000);
 }
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-}
+// for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+// }
+
+
 
 // let myIndex = 0;
 // carousel();
