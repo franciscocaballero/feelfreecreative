@@ -1,20 +1,23 @@
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
 
 
-let slideIndex = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 
+// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    let i;
+    var i;
+    
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -25,38 +28,38 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
+    // slideIndex++;
+    // if (slideIndex > slides.length) {
+    //     slideIndex = 1
+    // }
+    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        // setTimeout(showSlides, 5000);
     }
-    slides[slideIndex - 1].style.display = "block";
-    // dots[slideIndex - 1].className += " active";
-
-    setTimeout(showSlides, 5000);
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }
-// for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-// }
 
 
 
-// let myIndex = 0;
-// carousel();
+var myIndex = 0;
+carousel();
 
-// function carousel() {
-//     let i;
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
+function carousel() {
+    var i;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
-//     myIndex++;
-//     if (myIndex > slides.length) {
-//         myIndex = 1
-//     }
-//     slides[myIndex - 1].style.display = "block";
+    myIndex++;
+    if (myIndex > slides.length) {
+        myIndex = 1
+    }
+    slides[myIndex - 1].style.display = "block";
 
-//     setTimeout(carousel, 5000);
-// }
+    setTimeout(carousel, 5000);
+}
 
 
 /* NAV BAR FUNCTIONALITY */
