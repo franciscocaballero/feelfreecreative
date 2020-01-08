@@ -1,12 +1,35 @@
-.navigation {
+.main-head {
+  z-index: 2;
+  position: relative;
+  width: 100%;
   background-color: $color-black;
-  padding: 1.5rem 1.5rem;
+}
+
+.navigation {
   z-index: 999;
   color: $color-black;
   list-style: none;
-  // position: fixed;
-  // width: 100vw;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0;
 
+  &__logo {
+    flex: 1 1 20rem;
+    background-image: cover;
+
+    .logo-img {
+      height: 4rem;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+  }
   @include respond(tab-port) {
     .navigation {
       display: flex;
@@ -18,9 +41,8 @@
       align-items: center;
       flex-wrap: nowrap;
       &__main {
-      
         display: flex;
-    
+
         margin-right: 30px;
         justify-content: flex-end;
       }

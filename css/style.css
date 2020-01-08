@@ -843,12 +843,31 @@ footer {
       display: none; } }
 
 /* LOADERS */
+.main-head {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  background-color: #010101; }
+
 .navigation {
-  background-color: #010101;
-  padding: 1.5rem 1.5rem;
   z-index: 999;
   color: #010101;
-  list-style: none; }
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0; }
+  .navigation__logo {
+    flex: 1 1 20rem;
+    background-image: cover; }
+    .navigation__logo .logo-img {
+      height: 4rem; }
+  .navigation__main {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem; }
   @media only screen and (min-width: 56.25em) {
     .navigation .navigation {
       display: flex;
